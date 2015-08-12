@@ -3,34 +3,24 @@ body {
   font-family: sans-serif;
   font-size: 13px;
 }
-div:first-child{
-  min-width: 400px;
-  text-align: right;
-}
 #komunikat {
   background: #7E7E7E;
   color: #fff;
-  padding: 15px 15px 15px;
-  min-width: 400px;
-  max-width: 500px;
   display: block;
+  padding: 15px 15px 15px;
+  width: 100%;
   font-size: 1.3em;
   text-align: center;
-  margin: auto;
-  position: fixed;
-  top:30px;
-  left: 535px;
+  top: -75px;
+  position: absolute;
 }
+
 form {
   background: #E4ECF3;
   padding: 4em 4em 4em;
-  min-width: 400px;
-  max-width: 500px;
+  max-width: 400px;
   box-shadow: 0 0 1em #575050;
   margin: 100px auto;
-  position: fixed;
-  left: 550px;
-  top: 40px;
 }
 p {
   margin: 0 0 30px 0;
@@ -68,13 +58,3 @@ input[type="submit"] {
   margin: 1em 0 0;
   padding: .8em 0;
 }
-
-/***#komunikat {
-  background: #E4ECF3;
-  color: #000;
-  display: block;
-  font-size: 1.3em;
-  text-align: center;
-  margin-top: 30px;
-  padding: 7px 10px;
-}***/
