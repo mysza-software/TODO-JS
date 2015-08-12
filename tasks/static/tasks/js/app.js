@@ -1,3 +1,7 @@
+
+TODO-JS
+
+
 //funkcja dodająca nową pozycję
 function dodajPozycje(pozycja, czyZapisywac=true){
 	//tworzenie obiektu Li nowej pozycji
