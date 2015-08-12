@@ -160,9 +160,8 @@ function wyborCheckBoxa(zdarzenie){
 
 //tworzenie zmiennej do której przypisany jest przycisk buttonAdd
 	var buttonAdd = document.getElementById("addButton")
+	//wywołanie funkcji  obsługa klikniecia add po kliknięciu
 	buttonAdd.addEventListener("click", obslugaKliknieciaAdd, false);
-//wywołanie funkcji  obsługa klikniecia add po kliknięciu
-	//buttonAdd.onclick = obslugaKliknieciaAdd;
 
 //tworzenie tablicy z przyciskami któte mają klasę edit
 var guzikiEdytuj = document.getElementsByClassName("edit");
@@ -193,9 +192,9 @@ $("#new-task").keypress(function (zdarzenie) {
 		    }
 		});
 
-	$("input[type='text']").keypress(function (zdarzenie) {
+	$("#incomplete-tasks, #completed-tasks").keypress(function (zdarzenie) {
 			    if(zdarzenie.which === 13) {
-						zakonczEdycje;
+						zakonczEdycje(zdarzenie);
 			    }
 			});
 
