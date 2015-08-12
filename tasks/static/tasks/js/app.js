@@ -159,7 +159,8 @@ function wyborCheckBoxa(zdarzenie){
 }
 
 //tworzenie zmiennej do której przypisany jest przycisk buttonAdd
-	var buttonAdd = document.getElementById("addButton");
+	var buttonAdd = document.getElementById("addButton")
+	buttonAdd.addEventListener("click", obslugaKliknieciaAdd, false);
 //wywołanie funkcji  obsługa klikniecia add po kliknięciu
 	//buttonAdd.onclick = obslugaKliknieciaAdd;
 
@@ -191,6 +192,12 @@ $("#new-task").keypress(function (zdarzenie) {
 					$('input')[0].value='';
 		    }
 		});
+
+	$("input[type='text']").keypress(function (zdarzenie) {
+			    if(zdarzenie.which === 13) {
+						zakonczEdycje;
+			    }
+			});
 
 		//AJAX
 		function wyswietlZadania(data,textStatus,jqXHR) {	 //data to dane ktore pobiera json
